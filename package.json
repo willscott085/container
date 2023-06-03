@@ -10,7 +10,9 @@
     "start": "next start",
     "format:prisma": "npx prisma format",
     "prisma:generate": "npx prisma generate",
-    "prisma:migrate": "npx prisma migrate"
+    "prisma:migrate": "npx prisma migrate",
+    "prisma:studio": "npx prisma studio",
+    "prisma:push": "npx prisma db push"
   },
   "dependencies": {
     "@prisma/client": "^4.14.0",
