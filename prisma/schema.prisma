@@ -21,8 +21,11 @@ model Transaction {
     memo       String?
     category   Category @relation(fields: [categoryId], references: [id])
     categoryId String
+    userId     String
 
     @@index([title])
+    @@index([categoryId])
+    @@index([userId])
 }
 
 model Category {
@@ -32,6 +35,8 @@ model Category {
     title        String
     transactions Transaction[]
     memo         String?
+    userId       String
 
     @@index([title])
+    @@index([userId])
 }
